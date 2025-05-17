@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "monoapp",
+  "version": "0.1.0",
+  "identifier": "com.monoapp.app",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../build"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "monoapp",
+        "width": 1000,
+        "height": 720,
+        "decorations": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/monoapp 32x32.png",
+      "icons/128x128.png",
+      "icons/256x256.png",
+      "icons/monoapp.ico"
+    ]
+  }
+}
